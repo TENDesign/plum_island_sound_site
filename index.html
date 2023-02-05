@@ -1,0 +1,38 @@
+<style>
+iframe {
+    height: 100vh !important
+}
+.panel.panel-success {
+    width: 350px !important
+}
+
+</style>
+<!-- Begin CasperLet Kiosk Rentals Display -->
+<div style="width: 100%" id="casperRentalsDisplayIQbgRMqeNMq0WNnw">
+	<script>
+		var e =
+			'https://www.casperpanel.com/rentals/IQbgRMqeNMq0WNnw/available?embed=true';
+		if (window.location.href && URL)
+			try {
+				var a = new URL(window.location.href);
+				a.searchParams &&
+					null !== a.searchParams.get('accessKey') &&
+					(e +=
+						'&avatarKey=' +
+						encodeURIComponent(a.searchParams.get('avatarKey')) +
+						'&accessKey=' +
+						encodeURIComponent(a.searchParams.get('accessKey')) +
+						'&t=' +
+						encodeURIComponent(a.searchParams.get('t')));
+			} catch (r) {}
+		var t = document.createElement('iframe');
+		(t.style.width = '100%'),
+			(t.style.minHeight = '500px'),
+			(t.style.border = 'none'),
+			(t.src = e),
+			document
+				.getElementById('casperRentalsDisplayIQbgRMqeNMq0WNnw')
+				.appendChild(t);
+	</script>
+</div>
+<!-- End CasperLet Kiosk Rentals Display -->
