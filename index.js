@@ -1,10 +1,10 @@
-var iframeURL = 'https://www.casperpanel.com/rentals/E2Hbd2WKOZIibce4/available?embed=true';
+var e = 'https://www.casperpanel.com/rentals/E2Hbd2WKOZIibce4/available?embed=true';
 if (window.location.href && URL)
     try {
         var a = new URL(window.location.href);
         a.searchParams &&
             null !== a.searchParams.get('accessKey') &&
-            (iframeURL +=
+            (e +=
                 '&avatarKey=' +
                 encodeURIComponent(
                     a.searchParams.get('avatarKey')
@@ -20,7 +20,7 @@ var t = document.createElement('iframe');
 (t.style.width = '100%'),
     (t.style.minHeight = '500px'),
     (t.style.border = 'none'),
-    (t.src = iframeURL),
+    (t.src = e),
     (t.id = "CasperFrame")
 document
     .getElementById('casperRentalsDisplayE2Hbd2WKOZIibce4')
