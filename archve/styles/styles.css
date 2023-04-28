@@ -1,0 +1,16 @@
+iframe {
+    min-height: 100vh !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font: 32px;
+}
+
+.navbar-brand img {
+    margin: 0 10px;
+    padding: 0;
+    max-width: 32px;
+}
